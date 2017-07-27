@@ -71,7 +71,7 @@ function question4() {
 function question5() {
   // Answer:
   data.forEach(function(items){
-    if (items.materials.length <= 8){
+    if (items.materials.length >= 8){
       console.log(items.title + ' ' + items.materials.length + ' ' + items.materials)
     }
   })
@@ -84,4 +84,15 @@ function question5() {
 // Answer:
 function question6() {
   // Answer:
+  let who = 0;
+
+   data.forEach(function(e){
+     if (e.who_made ==='i_did'){
+       who++;
+
+     }
+
+   })
+console.log(who);
+
 }
